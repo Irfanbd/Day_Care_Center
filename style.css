@@ -92,6 +92,18 @@ height: 120px;
 .landing-head .bg-image img:hover{
     height: 65%;
 }
+@media screen and (max-width: 768px) {
+    .landing-head .bg-image img{
+        margin-top: 100px;
+       width: 350px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .landing-head .bg-title .glow{
+        color: antiquewhite;
+     
+    }
+}
 .landing-head .bg-title{
     flex: 1;
     padding: 30px;
@@ -115,4 +127,110 @@ height: 120px;
 .landing-head .bg-title p:hover{
    border: 5px solid gray;
    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .landing-head {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .landing-head .bg-title h1{
+       font-size:32px ;
+    }
+}
+
+/**about */
+@media screen and (max-width: 768px) {
+    .about{
+       height: 80vh;
+    }
+}
+
+.about-head{
+    height:400px;
+    background: #d32e36;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.about-title{
+    background: rgb(88,186,191);
+background: linear-gradient(191deg, rgba(88,186,191,1) 0%, rgba(255,227,159,1) 100%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 40px;
+}
+.about-title h1{
+    font-family: cursive;
+    font-size: 50px;
+}
+.about{
+    height: 40vh;
+    display: flex;
+    width: 80%;
+   
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+.about .box{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.about .box img{
+    height: 80%;
+}
+.about .box-details{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.about .box-details p{
+    text-align: center;
+}
+
+
+
+/**about 2 */
+.about-2{
+    height: 40vh;
+    display: flex;
+    width: 80%;
+   
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid gray;
+    
+}
+.about-2 .box img{
+    height: 80%;
+    
+}
+.about-2 .box{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.about-2 .box-details{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.about-2 .box-details p{
+    text-align: center;
 }
