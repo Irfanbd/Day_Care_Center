@@ -205,12 +205,12 @@ height: 120px;
     width: 80%;
     height: 500px;
     margin: 0 auto;
-    padding: 20px;
+    margin-top: 10px;
 }
 .care-image img{
     height: 500px;
     width:100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 /**Offer */
 .offer{
@@ -219,6 +219,16 @@ height: 120px;
     width: 80%;
     margin:  auto;
     display: flex;
+}
+@media screen and (max-width: 768px) {
+  .offer{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer .box{
+    flex-direction: column;
+  }
 }
 .offer .box{
     display: flex;
@@ -264,6 +274,14 @@ height: 120px;
   @font-face {
     font-family: Exo;
     src: url(./fonts/Exo2.0-Medium.otf);
+  }
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      padding-top: 1600px;
+      margin-top:1600px ;
+     
+    }
   }
   .main{
     margin: auto;
@@ -347,7 +365,7 @@ height: 120px;
     right: 0;
     background: linear-gradient(191deg, rgba(88,186,191,1) 0%, rgba(255,227,159,1) 100%);
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     color: #fff;
   }
@@ -403,7 +421,7 @@ height: 120px;
   }
   .footer-bottom{
     background: #0c52a1;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
@@ -451,4 +469,11 @@ height: 120px;
       margin-top: 10px;
       margin-bottom: 20px;
     }
+    }
+    @media screen and (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        
+        margin-top:500px ;
+      }
     }
